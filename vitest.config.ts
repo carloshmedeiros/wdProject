@@ -1,0 +1,9 @@
+/// <reference path="./types/vitest-config.d.ts" />
+import { defineConfig } from "vitest/config";
+
+export default defineConfig({
+  test: {
+    environment: "node",
+    include: ["lib/**/*.test.ts"],
+  },
+});

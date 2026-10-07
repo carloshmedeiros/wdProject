@@ -1,0 +1,219 @@
+{
+  "at": "2026-10-06T23:34:06.892Z",
+  "request": {
+    "cid": "womfr91d8oos8e9qm69231lx",
+    "run_id": "s9kaq6n8ocygqjzfturpdjky",
+    "result": [
+      {
+        "seq": 0,
+        "sku": "vfs7l46pv2i1jzsaxg8mwzu1",
+        "price": 724.38,
+        "stock": 430
+      },
+      {
+        "seq": 1,
+        "sku": "x9r8lprnf5lija7o7gxfs1ai",
+        "price": 1097.32,
+        "stock": 351
+      },
+      {
+        "seq": 2,
+        "sku": "a6ugw35erfg5xk98p7enamu4",
+        "price": 1552.22,
+        "stock": 336
+      },
+      {
+        "seq": 3,
+        "sku": "dif0r9jxu9ajg21cuhfhaidc",
+        "price": 867.61,
+        "stock": 475
+      },
+      {
+        "seq": 4,
+        "sku": "qo7uh4kebxeu6nbvodbfj6tf",
+        "price": 1756.53,
+        "stock": 233
+      },
+      {
+        "seq": 5,
+        "sku": "d67h0veart85jvb7a9wyz48v",
+        "price": 739.89,
+        "stock": 204
+      },
+      {
+        "seq": 6,
+        "sku": "txphw7k99zxf7dm0z1m4x81q",
+        "price": 1919.13,
+        "stock": 336
+      },
+      {
+        "seq": 7,
+        "sku": "rmxpx85st0k5w45g0waxi8un",
+        "price": 2488.34,
+        "stock": 192
+      },
+      {
+        "seq": 8,
+        "sku": "ay9ly86budd690l3seed6m7x",
+        "price": 945.88,
+        "stock": 353
+      },
+      {
+        "seq": 9,
+        "sku": "zcb0v4lq8zapdhrs7kku83zg",
+        "price": 1768.99,
+        "stock": 466
+      },
+      {
+        "seq": 10,
+        "sku": "abd7upwc36sqs9s5eo9iypdw",
+        "price": 2066.2,
+        "stock": 490
+      },
+      {
+        "seq": 11,
+        "sku": "y3u6ryrs2i1cd8rcpsy8sqay",
+        "price": 1894.47,
+        "stock": 279
+      },
+      {
+        "seq": 12,
+        "sku": "vsk7nigpbue78ctcbcqgzd2o",
+        "price": 1944.89,
+        "stock": 289
+      },
+      {
+        "seq": 13,
+        "sku": "a9cs7irnncchsbjxatl5pmwy",
+        "price": 986.12,
+        "stock": 214
+      },
+      {
+        "seq": 14,
+        "sku": "f61xiknpm2p2f6ettiehrrf5",
+        "price": 821.1,
+        "stock": 373
+      },
+      {
+        "seq": 15,
+        "sku": "cwca3mffcg9y8e8o7t19r3q9",
+        "price": 1876.36,
+        "stock": 284
+      },
+      {
+        "seq": 16,
+        "sku": "ucab1wcc1210bfzl28dw3ujn",
+        "price": 2097.58,
+        "stock": 265
+      },
+      {
+        "seq": 17,
+        "sku": "wy72s4jbn5vy6hfn11ihtt0p",
+        "price": 966.47,
+        "stock": 78
+      },
+      {
+        "seq": 18,
+        "sku": "h6q8c0ksijeutohova3k7jrk",
+        "price": 1261.05,
+        "stock": 60
+      },
+      {
+        "seq": 19,
+        "sku": "gnhqpmbcnxgwspsyntrmwcut",
+        "price": 2134.28,
+        "stock": 288
+      }
+    ]
+  },
+  "response": {
+    "ok": true,
+    "score": 100,
+    "attempt": 1,
+    "ack": {
+      "target_ms": 600,
+      "measured": 20,
+      "p50": 402,
+      "p95": 469,
+      "worst": {
+        "seq": 13,
+        "ms": 476
+      },
+      "over_target": [],
+      "failed": [],
+      "warmup_ms": 438,
+      "pass": true
+    },
+    "idempotency": {
+      "duplicate_seq": 3,
+      "duplicate_sku": "dif0r9jxu9ajg21cuhfhaidc",
+      "enrich_calls": 1,
+      "expected_calls": 1,
+      "pass": true
+    },
+    "retry": {
+      "forced_500": 3,
+      "skus_with_500": 3,
+      "recovered": 3,
+      "pass": true
+    },
+    "concurrency": {
+      "limit": 3,
+      "got_429": 0,
+      "skus_stuck_after_429": [],
+      "pass": true
+    },
+    "result": {
+      "expected": 20,
+      "matched": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mismatched": [],
+      "missing": [],
+      "unknown": [],
+      "pass": true
+    },
+    "duration_ms": 2138,
+    "breakdown": {
+      "result": {
+        "weight": 30,
+        "earned": 30
+      },
+      "ack": {
+        "weight": 30,
+        "earned": 30
+      },
+      "idempotency": {
+        "weight": 15,
+        "earned": 15
+      },
+      "retry": {
+        "weight": 15,
+        "earned": 15
+      },
+      "concurrency": {
+        "weight": 10,
+        "earned": 10
+      }
+    }
+  }
+}
